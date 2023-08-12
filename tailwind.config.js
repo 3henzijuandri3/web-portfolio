@@ -7,7 +7,7 @@ export default {
   theme: {
     container : {
       center : true,
-      padding : '12px',
+      padding : '16px',
     },
     
     extend: {
@@ -24,6 +24,12 @@ export default {
       },
       
     },
+
+    fontFamily : {
+      'signature' : ["Great Vibes"],
+    },
+
   },
+
   plugins: [],
 }
