@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import {FaBars, FaTimes} from "react-icons/fa";
 
-const NavBar = () => {
+const Navbar = () => {
 
     const [menuClicked, setMenuClicked] = useState(false);
 
@@ -24,7 +24,7 @@ const NavBar = () => {
 
         {
             id : 4,
-            nav : "experience"
+            nav : "certification"
         },
 
         {
@@ -83,4 +83,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default Navbar

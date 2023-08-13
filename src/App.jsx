@@ -1,14 +1,17 @@
 import About from "./components/About"
+import Certification from "./components/Certification"
 import Home from "./components/Home"
-import NavBar from "./components/NavBar"
+import Navbar from "./components/Navbar"
+import Portfolio from "./components/Portfolio"
 
 function App() {
   return (
     <>
-      <NavBar />
+      <Navbar />
       <Home />
       <About />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <Portfolio />
+      <Certification />
     </>
   )
 }
