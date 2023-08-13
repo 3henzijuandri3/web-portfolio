@@ -33,8 +33,8 @@ const NavBar = () => {
         }
     ];
 
-    const menuShow = "top-full transition-all duration-500";
-    const menuHide = "-top-[400%] transition-all duration-500";
+    const menuShow = "opacity-100 transition-all duration-300";
+    const menuHide = "hidden opacity-0 transition-all duration-300";
 
     function handleMenuClick(){
         setMenuClicked(!menuClicked);
@@ -44,29 +44,29 @@ const NavBar = () => {
   return (
     
     // Navbar Content Wrapper 
-    <header className='w-full h-20 bg-[#eeeff1]'>
-        <div className='container flex justify-between items-center w-full h-full relative'>
+    <header className='w-full h-20 bg-black-primary fixed top-0 z-10'>
+        <div className='container flex justify-between items-center w-full h-full'>
 
             {/* Nama */}
-            <h1 className='text-4xl text-black font-signature font-bold'> Henzi </h1>
+            <h1 className='text-2xl text-white font-bold'> PORTFOLIO. </h1>
 
             {/* Navigation Tablet & Pc */}
-            <nav className='hidden md:block text-[#1a1c20]'>
+            <nav className='hidden md:block text-gray-400'>
                 <ul className='flex'>
                     {links.map(({id, nav}) => (
 
-                        <li key={id} className='px-4 font-medium cursor-pointer capitalize hover:scale-105 duration-200 ease-in-out'> {nav} </li>
+                        <li key={id} className='px-4 font-medium cursor-pointer capitalize hover:scale-105 hover:text-white duration-200 ease-in-out'> {nav} </li>
                     
                     ))}
                 </ul>
             </nav>
 
             {/* Navigation Mobile Phone */}
-            <nav className={`${!menuClicked ? menuHide : menuShow} block md:hidden w-full h-fit absolute left-0 right-0 text-[#1a1c20] bg-[#eeeff1] -z-[1]`}>
-                <ul className='flex flex-col text-center'>
+            <nav className={`${!menuClicked ? menuHide : menuShow} block md:hidden w-full h-screen absolute top-full left-0 right-0 text-center text-gray-400 bg-black-primary -z-[1]`}>
+                <ul className='flex flex-col h-full justify-start items-center'>
                     {links.map(({id, nav}) => (
 
-                        <li key={id} className='py-4 font-medium cursor-pointer capitalize'> {nav} </li>
+                        <li key={id} className='py-6 font-medium cursor-pointer capitalize relative -z-[2]'> {nav} </li>
                     
                     ))}
                 </ul>
@@ -74,7 +74,7 @@ const NavBar = () => {
 
             {/* Hamburger Menu */}
             <div onClick={handleMenuClick} className='cursor-pointer md:hidden'>
-                { !menuClicked ? <FaBars size={22} color='#1a1c20'/> : <FaTimes size={22} color='#1a1c20'/> }
+                { !menuClicked ? <FaBars size={22} color='white'/> : <FaTimes size={22} color='white'/> }
             </div>
 
         </div>

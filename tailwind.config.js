@@ -22,6 +22,10 @@ export default {
   
         '2xl': '1320px',
       },
+
+      colors : {
+        "black-primary" : "#1A1C20",
+      },
       
     },
 
