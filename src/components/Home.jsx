@@ -1,6 +1,7 @@
 import React from 'react';
 import Typed from 'react-typed';
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md';
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -22,13 +23,14 @@ const Home = () => {
             <span className='px-1 text-cyan-500'> Web Dev </span>
             </p>
 
-            <button className='flex justify-center items-center w-[150px] mt-8 py-2 rounded-md font-bold text-white bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer group'>
-                About Me 
+            <Link to='about' smooth duration={500} className='flex justify-center items-center w-[150px] mt-8 py-2 rounded-md font-bold text-white bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer group'>
 
-                <span className='pl-1 pt-[1px] group-hover:rotate-90 transition-all duration-300'>
-                    <MdOutlineKeyboardArrowRight size={25}/>
-                </span>
-            </button>
+              About Me
+              
+              <span className='pl-1 pt-[1px] group-hover:rotate-90 transition-all duration-300'>
+                <MdOutlineKeyboardArrowRight size={25}/>
+              </span>
+            </Link>
         </div>
     </section>
   )

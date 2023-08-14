@@ -90,12 +90,12 @@ const Portfolio = () => {
                             <p className='mb-1 text-lg font-bold'> {title} </p>
 
                             <div className='flex items-center gap-3 cursor-pointer'>
-                                <a href={web} target='_blank' className={`${type == 'Mobile' ? "hidden" : "block"}`}>
-                                    <AiOutlinePlayCircle color='white' size={24}/>
+                                <a href={web} target='_blank' className={`${type == 'Mobile' ? "hidden" : "block"} hover:text-cyan-500 ease-in-out transition-all duration-300`}>
+                                    <AiOutlinePlayCircle size={24}/>
                                 </a>
 
-                                <a href={github} target='_blank'>  
-                                    <AiOutlineGithub color='white' size={24}/>
+                                <a href={github} target='_blank' className='hover:text-black ease-in-out transition-all duration-300'>  
+                                    <AiOutlineGithub size={24}/>
                                 </a>
                             </div>
                         </div>

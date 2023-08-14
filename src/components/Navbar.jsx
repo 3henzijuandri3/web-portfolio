@@ -35,7 +35,7 @@ const Navbar = () => {
     ];
 
     const menuShow = "opacity-100 transition-all duration-300";
-    const menuHide = "hidden opacity-0 transition-all duration-300";
+    const menuHide = "pointer-events-none opacity-0 transition-all duration-300";
 
     function handleMenuClick(){
         setMenuClicked(!menuClicked);
@@ -57,7 +57,7 @@ const Navbar = () => {
                     {links.map(({id, nav}) => (
 
                         <li key={id} className='px-4 font-medium cursor-pointer capitalize hover:scale-105 hover:text-white duration-200 ease-in-out'> 
-                            <Link to={nav} smooth duration={500}> {nav} </Link>
+                            <Link to={nav} smooth duration={700}> {nav} </Link>
                         </li>
                     
                     ))}
@@ -65,11 +65,13 @@ const Navbar = () => {
             </nav>
 
             {/* Navigation Mobile Phone */}
-            <nav className={`${!menuClicked ? menuHide : menuShow} block md:hidden w-full h-screen absolute top-full left-0 right-0 text-center text-gray-400 bg-black-primary -z-[1]`}>
+            <nav className={`${!menuClicked ? menuHide : menuShow} block md:hidden w-full h-screen absolute top-full left-0 right-0 text-center text-gray-400 bg-black-primary`}>
                 <ul className='flex flex-col h-full justify-start items-center'>
                     {links.map(({id, nav}) => (
 
-                        <li key={id} className='py-6 font-medium cursor-pointer capitalize relative -z-[2]'> {nav} </li>
+                        <li key={id} className='py-6 font-medium cursor-pointer capitalize relative hover:scale-105 hover:text-white duration-200 ease-in-out'> 
+                            <Link onClick={handleMenuClick} to={nav} smooth duration={700}> {nav} </Link>
+                        </li>
                     
                     ))}
                 </ul>

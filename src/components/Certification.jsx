@@ -129,7 +129,7 @@ const Certification = () => {
                 <div className='flex flex-col px-5 text-center absolute -bottom-10 group-hover:bottom-14 transition-all ease-in-out duration-500'>
                   <p className='mb-3 text-xl text-white font-bold'> {title} </p>
 
-                  <a href={url} className='mx-auto' target='_blank'> <PiLinkSimpleHorizontal size={25}/> </a>
+                  <a href={url} className='mx-auto hover:text-cyan-500 transition-all ease-in-out duration-300' target='_blank'> <PiLinkSimpleHorizontal size={25}/> </a>
                 </div>
 
               </div>
