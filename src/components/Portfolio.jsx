@@ -66,7 +66,7 @@ const Portfolio = () => {
     ];
 
   return (
-    <section name='portfolio' className='w-full py-20 text-white bg-gradient-to-b from-black-primary to-gray-800 sm:py-32'>
+    <section name='portfolio' className='w-full py-20 text-white bg-gradient-to-b from-black-primary to-gray-800'>
         <div className='container'>
 
             {/* Portfolio Judul */}

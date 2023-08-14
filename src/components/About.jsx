@@ -3,7 +3,7 @@ import Image from "../assets/HENZI.png";
 
 const About = () => {
   return (
-    <section name="about" className='w-full py-20 text-white bg-gradient-to-b from-gray-800 to-black-primary sm:py-32'>
+    <section name="about" className='w-full py-20 text-white bg-gradient-to-b from-gray-800 to-black-primary'>
         <div className='container flex flex-col w-full'>
 
           {/* About Judul */}
