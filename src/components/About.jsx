@@ -12,7 +12,7 @@ const About = () => {
           </div>
 
           {/* About Content */}
-          <div className='flex flex-col justify-center items-start gap-8 tracking-wide lg:flex-row'>
+          <div className='flex flex-col justify-center items-start gap-8 mb-5 tracking-wide lg:flex-row'>
 
             {/* About Picture */}
             <div className='w-full lg:w-[40%] xl:w-[30%]'>
@@ -36,6 +36,21 @@ const About = () => {
             </div>
 
           </div>
+
+          {/* Skills */}
+          {/* <div className='text-white'>
+
+            <div className='flex items-center gap-3'>
+              <h1 className='text-2xl font-bold'> Skills </h1>
+
+              <span className='w-12 h-[2px] bg-gray-500'></span>
+            </div>
+
+            <div className='grid'>
+
+            </div>
+
+          </div> */}
 
         </div>
     </section>
