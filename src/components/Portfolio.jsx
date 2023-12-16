@@ -1,66 +1,42 @@
 import React from 'react';
-import Kuphie from '../assets/Kuphie.jpg';
 import Kophie from '../assets/Kophie.png';
-import Rack from '../assets/Rack.jpg';
-import Silidi from '../assets/Silidi.jpg';
 import StoryApp from '../assets/StoryApp.png';
 import TemanTani from '../assets/TemanTani.png';
-import {AiOutlinePlayCircle, AiOutlineGithub} from 'react-icons/ai';
+import resepku from '../assets/resepku.png';
+import {AiOutlineGithub} from 'react-icons/ai';
 
 const Portfolio = () => {
     const portfolios = [
         {
             id : 1,
-            image : TemanTani,
-            github : "https://github.com/Teman-Tani-Bangkit/Mobile-Development",
-            web : null,
-            type : "Mobile",
-            title : "Teman Tani"
+            image : resepku,
+            github : "https://github.com/3henzijuandri3/resepku-main",
+            type : "Flutter",
+            title : "Resepku"
         },
 
         {
             id : 2,
+            image : TemanTani,
+            github : "https://github.com/Teman-Tani-Bangkit/Mobile-Development",
+            type : "Kotlin",
+            title : "Teman Tani"
+        },
+
+        {
+            id : 3,
             image : StoryApp,
             github : "https://github.com/3henzijuandri3/Story-App",
-            web : null,
-            type : "Mobile",
+            type : "Kotlin",
             title : "Story App"
         },
         
         {
-            id : 3,
+            id : 4,
             image : Kophie,
             github : "https://github.com/3henzijuandri3/Kophie",
-            web : null,
-            type : "Mobile",
+            type : "Kotlin",
             title : "Kophie"
-        },
-
-        {
-            id : 4,
-            image : Silidi,
-            github : "https://github.com/3henzijuandri3/siLidi",
-            web : "https://silidi-front-end.netlify.app",
-            type : "Website",
-            title : "Silidi"
-        },
-
-        {
-            id : 5,
-            image : Rack,
-            github : "https://github.com/3henzijuandri3/Book-Shelf",
-            web : "https://3henzijuandri3.github.io/Book-Shelf",
-            type : "Website",
-            title : "Rack"
-        },
-
-        {
-            id : 6,
-            image : Kuphie,
-            github : "https://github.com/3henzijuandri3/Kuphie",
-            web : "https://3henzijuandri3.github.io/Kuphie",
-            type : "Website",
-            title : "Kuphie"
         },
 
     ];
@@ -73,13 +49,13 @@ const Portfolio = () => {
             <div className='mb-8'>
                 <h1 className='pb-1 text-3xl font-bold border-b-2 border-gray-500 inline'> Portfolio </h1>
 
-                <p className='mt-5 md:text-lg'> Here are some of my website and mobile portfolio </p>
+                <p className='mt-5 md:text-lg'> Here are some of my mobile portfolio (Flutter and Kotlin) </p>
             </div>
 
             {/* Portfolio Container */}
             <div className='grid gap-12 sm:grid-cols-2 md:grid-cols-3'>
 
-                {portfolios.map(({id, image, github, web, type, title}) => (
+                {portfolios.map(({id, image, github, type, title}) => (
                     <div key={id} className='h-[230px] rounded-lg shadow-md shadow-gray-600 overflow-hidden relative group'>
 
                         {/* Image */}
@@ -90,10 +66,6 @@ const Portfolio = () => {
                             <p className='mb-1 text-lg font-bold'> {title} </p>
 
                             <div className='flex items-center gap-3 cursor-pointer'>
-                                <a href={web} target='_blank' className={`${type == 'Mobile' ? "hidden" : "block"} hover:text-cyan-500 ease-in-out transition-all duration-300`}>
-                                    <AiOutlinePlayCircle size={24}/>
-                                </a>
-
                                 <a href={github} target='_blank' className='hover:text-black ease-in-out transition-all duration-300'>  
                                     <AiOutlineGithub size={24}/>
                                 </a>
