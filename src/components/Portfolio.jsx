@@ -3,12 +3,20 @@ import Kophie from '../assets/Kophie.png';
 import StoryApp from '../assets/StoryApp.png';
 import TemanTani from '../assets/TemanTani.png';
 import resepku from '../assets/resepku.png';
+import ceritaku from '../assets/ceritaku.png';
 import {AiOutlineGithub} from 'react-icons/ai';
 
 const Portfolio = () => {
     const portfolios = [
         {
             id : 1,
+            image : ceritaku,
+            github : "https://github.com/3henzijuandri3/ceritaku",
+            type : "Flutter",
+            title : "Ceritaku"
+        },
+        {
+            id : 2,
             image : resepku,
             github : "https://github.com/3henzijuandri3/resepku-main",
             type : "Flutter",
@@ -16,7 +24,7 @@ const Portfolio = () => {
         },
 
         {
-            id : 2,
+            id : 3,
             image : TemanTani,
             github : "https://github.com/Teman-Tani-Bangkit/Mobile-Development",
             type : "Kotlin",
@@ -24,7 +32,7 @@ const Portfolio = () => {
         },
 
         {
-            id : 3,
+            id : 4,
             image : StoryApp,
             github : "https://github.com/3henzijuandri3/Story-App",
             type : "Kotlin",
@@ -32,7 +40,7 @@ const Portfolio = () => {
         },
         
         {
-            id : 4,
+            id : 5,
             image : Kophie,
             github : "https://github.com/3henzijuandri3/Kophie",
             type : "Kotlin",
