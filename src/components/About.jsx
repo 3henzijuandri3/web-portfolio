@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from "../assets/HENZI.png";
 
 const About = () => {
@@ -21,40 +20,28 @@ const About = () => {
 
             {/* About Text */}
             <div className='w-full lg:w-[60%] xl:w-[70%]'>
-              <p className='mb-4 text-base text-justify md:text-lg'>I am Henzi Juandri a fourth-year student at 
-                <a  href="https://telkomuniversity.ac.id/" target="_blank" className='pl-1 text-cyan-500'>Telkom University</a>
-                , currently in 7th semester, majoring in Informatics. I focused on Mobile Development and Web Front-End Development, mainly in Mobile Development. 
+              <p className='mb-4 text-base text-justify md:text-lg'>
+                Hi! I’m Henzi Juandri, an enthusiastic Informatics graduate with a specialization in Software Development, particularly in front-end and mobile application development. Based in Bandung, I excel in dynamic and fast-paced environments, quickly learning and adapting to new technologies.
               </p>
 
               <p className='mb-4 text-base text-justify md:text-lg'>
-                I have studied subjects that are fundamental for software development, such as programming, data structure, databases, etc. I also learn HTML, CSS, and Javascript for the basics of web development from several online web development courses. Furthermore, in order to expand my knowledge in Software Engineering, I joined 
-                <a href="https://grow.google/intl/id_id/bangkit/?tab=machine-learning" target="_blank" className='px-1 text-cyan-500'>Bangkit Academy led by Google, GoTo, & Traveloka - Android Learning Path</a> 
-                and successfully be in Top 68 Team (out of 750+ team) in final Capstone Project.
+                During my academic journey at 
+                <a href="https://telkomuniversity.ac.id/" className='pl-1 text-cyan-500'>Telkom University</a>, I maintained a GPA of 3.80/4.00 and honed my skills through projects and internships. I have hands-on experience with various technologies, including React.js, Next.js, Flutter, Kotlin, and Tailwind CSS, and have contributed to impactful projects, such as the redesign of Telkom DDB internship platforms and mobile applications for Maxximum Digital.
               </p>
 
-              <p className='text-base text-justify md:text-lg'>Besides my programming experience, I participate in my faculty laboratory (ASE Laboratory) as a laboratory assistant in the logistic division. I help maintain the laboratory inventory and other logistic-related tasks. Being a laboratory assistant increases my soft-skills in teamwork and organizing.</p>
+              <p className='mb-4 text-base text-justify md:text-lg'>
+                Beyond academics, I actively participated as a laboratory assistant at the Advanced Software Engineering Laboratory, where I developed strong teamwork and organizational skills. I also pursued certifications, including Bangkit Academy’s Android Learning Path and IDCamp’s Front-End Developer program, to continuously expand my knowledge and expertise.
+              </p>
+
+              <p className='text-base text-justify md:text-lg'>
+                With a curious and team-oriented mindset, I’m eager to contribute, solve challenges, and make a meaningful impact in the field of software development.
+              </p>
             </div>
 
           </div>
-
-          {/* Skills */}
-          {/* <div className='text-white'>
-
-            <div className='flex items-center gap-3'>
-              <h1 className='text-2xl font-bold'> Skills </h1>
-
-              <span className='w-12 h-[2px] bg-gray-500'></span>
-            </div>
-
-            <div className='grid'>
-
-            </div>
-
-          </div> */}
-
         </div>
     </section>
   )
 }
 
-export default About
+export default About;
